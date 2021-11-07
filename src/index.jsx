@@ -213,6 +213,25 @@ const App = observer(() => {
 			<div className="col-12">
 				<h1>Timing Calculator</h1>
 			</div>
+			<div className="col-12">
+				<p>
+					A simple app that takes an end time, and a set of events + durations to determine how much time you have to do things.
+				</p>
+				<p>
+					An example would be that you need to be somewhere by a cetian time, and you have things you need to do prior to leaving.
+					You can set the arrival time as the &quot;End Time&quote;, add an item and set the duration to the travel time. Add another item
+					for getting ready to leave and set the duration. The time displayed next to the last item is the time you need to do that thing in
+					order to be on time.
+				</p>
+				<strong>Directions</strong>
+				<ol>
+					<li>Select the end date/time.</li>
+					<li>Click &quot;Add Item&quot;</li>
+					<li>Fill in the &quot;Duration&quot; field with a duration. Natural english is detected. Eg: &quot;1 hour 3 minute&quot;</li>
+					<li>A time will be shown that subtracts the duration from the end time.</li>
+					<li>Repeat.</li>
+				</ol>
+			</div>
 		</div>
 		<div className="row gy-3">
 			<div className="col-12">
@@ -239,6 +258,9 @@ const App = observer(() => {
 			<div className="col-12">
 				<button onClick={model.addItem} className="btn btn-primary col-12">Add Item</button>
 			</div>
+		</div>
+		<div className="row gy-3">
+			<a href="https://github.com/kkirby/time-budget-calculator" target="_BLANK" style={{fontSize:'0.8em'}}>source on github</a>
 		</div>
 	</div>;
 });
